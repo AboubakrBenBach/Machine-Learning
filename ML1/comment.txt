@@ -1,0 +1,50 @@
+print(villes[-1]) //pour acceder aux derniers elements
+
+//technique de slicing on index de 0 a 3
+print(villes[0:3])
+print(villes[:3])
+print(villes[2:])
+//imprime tous les elements avec un pas
+print(villes[::2])
+
+//append: permet d'ajouter un element a la fin de la liste
+villes.append('Abbbb')
+
+//insert: permet d'ajouter un element a au milieu de la liste
+villes.insert(2,'Abbbb')
+
+//insert: permet d'ajouter une liste dansl la liste
+villes_2 =['bonjour','bonsoir']
+villes.extend(villes_2)
+
+//trier la liste
+villes.sort() //trier par ordre alphabetique
+villes.sort(reverse=True)
+
+//compter le nombre de fois
+villes.count('Paris')
+
+//dictionnaire *
+dict ={ "Bonjour":"Bara mo",
+	"Comment vas tu": "moye ke sengue"
+	}
+ 
+//list comprehension et dict comprehension
+//inserer la boucle for a l'interieur de la liste elle meme
+
+//numpy nd array
+
+//pour avoir le pas entre les nombre
+np.arrange()
+
+//le type de donnée qu'on veut avoir
+dtype
+
+//pour asssembler deux tableaux 
+//hstack : horizontal stack
+
+//subsitting creer un tableau a partir d'un autre
+
+#########DateTimeIndex: nouveau type d'ndex
+
+#seaborn :pour ecrire des bonnes graphiques
