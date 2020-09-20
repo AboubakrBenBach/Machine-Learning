@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Na_to_K <= 14.829\nentropy = 2.008\nsamples = 160\nvalue = [20, 15, 13, 40, 72]\nclass = drugY", fillcolor="#f8caee"] ;
+1 [label="BP <= 0.5\nentropy = 1.846\nsamples = 88\nvalue = [20, 15, 13, 40, 0]\nclass = drugX", fillcolor="#c6c5f7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 50.5\nentropy = 0.985\nsamples = 35\nvalue = [20, 15, 0, 0, 0]\nclass = drugA", fillcolor="#f8e0ce"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 20\nvalue = [20, 0, 0, 0, 0]\nclass = drugA", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 15\nvalue = [0, 15, 0, 0, 0]\nclass = drugB", fillcolor="#7be539"] ;
+2 -> 4 ;
+5 [label="BP <= 1.5\nentropy = 0.804\nsamples = 53\nvalue = [0, 0, 13, 40, 0]\nclass = drugX", fillcolor="#7b79ed"] ;
+1 -> 5 ;
+6 [label="Cholesterol <= 0.5\nentropy = 1.0\nsamples = 26\nvalue = [0, 0, 13, 13, 0]\nclass = drugC", fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 13\nvalue = [0, 0, 13, 0, 0]\nclass = drugC", fillcolor="#39e5c5"] ;
+6 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 13\nvalue = [0, 0, 0, 13, 0]\nclass = drugX", fillcolor="#3c39e5"] ;
+6 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 27\nvalue = [0, 0, 0, 27, 0]\nclass = drugX", fillcolor="#3c39e5"] ;
+5 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 72\nvalue = [0, 0, 0, 0, 72]\nclass = drugY", fillcolor="#e539c0"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
